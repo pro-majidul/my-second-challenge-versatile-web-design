@@ -1,0 +1,219 @@
+/* google font added */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    color: white
+}
+
+/* shared style */
+
+.navbar,
+.banner {
+    max-width: 1000px;
+    margin: 2rem auto;
+
+}
+
+.common-text {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    color: white;
+    border-radius: 42px;
+    padding: 16px 40px;
+    background: rgb(230, 83, 60);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+
+/* navbar area style */
+header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 120%;
+}
+
+.list-items {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(255, 225, 255, 0.1);
+    border-radius: 18px;
+    padding: 8px 0;
+}
+
+.list-item {
+    list-style: none;
+    margin-right: 2rem;
+
+}
+
+.list-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.extra-feature {
+    padding: 6px 19px;
+    background-color: rgb(230, 83, 60);
+    border-radius: 20px;
+}
+
+/* banner area style */
+.banner {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content {
+    width: 50%;
+}
+
+.brand {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 1.8rem;
+}
+
+#extra-style {
+    font-family: "Dancing Script", cursive;
+    font-size: 7rem;
+    font-weight: 400;
+}
+
+.btn-secondary {
+    color: white;
+    border-radius: 42px;
+    padding: 16px 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+/* banner images area style */
+.banner-images{
+    position: relative;
+}
+.video {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    position: absolute;
+    padding: 12px;
+    top: 125px;
+    right: -50px;
+   
+}
+.video > h3{
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+.video > p{
+    color:rgba(255, 255, 255, 0.65);
+    margin-top: 0.6rem;
+
+}
+.tutorial{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 160px;
+    height: 70px;
+    text-align: center;
+    position: absolute;
+    padding: 12px;
+    margin-top: -160px;
+    margin-left: -80px;
+}
+.tutorial  h3{
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+.tutorial  p{
+    color:rgba(255, 255, 255, 0.65);
+    margin-top: 0.6rem;
+
+}
+.ball{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(230, 83, 60);
+    
+}
+.play-icon{
+    height: 15px;
+    width: 15px;
+    background: rgb(250, 250, 249);
+    clip-path: polygon(0 1%, 0% 100%, 100% 50%);
+    position: absolute;
+    top:40%;
+    left:15%;
+}
+.tutorial{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .navbar,
+.banner {
+    max-width: 500px;
+
+}
+    
+}
