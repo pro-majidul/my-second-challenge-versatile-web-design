@@ -19,11 +19,11 @@ body {
 }
 
 /* shared style */
-
+main,
 .navbar,
 .banner {
     max-width: 1000px;
-    margin: 2rem auto;
+    margin: 0 auto;
 
 }
 
@@ -46,12 +46,30 @@ body {
     font-weight: 600;
     margin-top: 2rem;
     cursor: pointer;
+    transition: 0.5s;
 }
+
+.btn-primary:hover {
+    color: gray;
+    background-color: blueviolet;
+}
+
+.section-title {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+
+
 
 
 /* navbar area style */
 header {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    padding-top: 2rem;
 }
 
 .navbar {
@@ -93,6 +111,16 @@ header {
     border-radius: 20px;
 }
 
+.hamber {
+    display: none;
+}
+
+.hamber>i {
+    color: white;
+    font-size: 1.5rem;
+
+}
+
 /* banner area style */
 .banner {
     margin-top: 5rem;
@@ -131,6 +159,12 @@ header {
     margin-top: 2rem;
     margin-left: 2rem;
     cursor: pointer;
+    transition: 0.5s ease-in;
+}
+
+.btn-secondary:hover {
+    background: rgb(230, 83, 60);
+    color: rgb(3, 3, 46);
 }
 
 /* banner images area style */
@@ -215,7 +249,42 @@ header {
     justify-content: space-between;
 }
 
+/* habit section area start */
+.habits {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
 
+.habit-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.habit-brand {
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+}
+
+.habit-content-item {
+    width: 231px;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.habit-img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.habit-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
 
 
 
@@ -224,11 +293,60 @@ header {
 
 
 @media screen and (max-width:576px) {
-
     .navbar,
+    main,
     .banner {
         max-width: 500px;
 
     }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .banner-images {
+        margin-top: 3rem;
+    }
+
+    .banner-i .hamber {
+        display: block;
+    }
+
+    .list-items {
+        display: none;
+    }
+
+    .hamber {
+        display: block;
+    }
+
+    .video {
+        top: 40px;
+    }
+
+    .tutorial {
+        margin-top: -315px;
+        margin-left: -65px;
+    }
+
+    .habits {
+        position: absolute;
+        top: 1024px;
+        background-color: black;
+    }
+
+    .habit-brand {
+      width: 90%;
+    }
+
+    .habit-content {
+        flex-direction: column;
+        gap:0.5rem;
+    }
+
 
 }
