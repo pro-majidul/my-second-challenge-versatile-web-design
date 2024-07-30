@@ -1,6 +1,10 @@
 /* google font added */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/* miama font added */
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+
 
 * {
     margin: 0;
@@ -110,7 +114,8 @@ header {
 }
 
 #extra-style {
-    font-family: "Dancing Script", cursive;
+    font-family: 'Miama', sans-serif;
+    line-height: 0;
     font-size: 7rem;
     font-weight: 400;
 }
@@ -129,9 +134,10 @@ header {
 }
 
 /* banner images area style */
-.banner-images{
+.banner-images {
     position: relative;
 }
+
 .video {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -144,19 +150,22 @@ header {
     padding: 12px;
     top: 125px;
     right: -50px;
-   
+
 }
-.video > h3{
+
+.video>h3 {
     color: white;
     font-size: 2.2rem;
     font-weight: 800;
 }
-.video > p{
-    color:rgba(255, 255, 255, 0.65);
+
+.video>p {
+    color: rgba(255, 255, 255, 0.65);
     margin-top: 0.6rem;
 
 }
-.tutorial{
+
+.tutorial {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
@@ -169,33 +178,38 @@ header {
     margin-top: -160px;
     margin-left: -80px;
 }
-.tutorial  h3{
+
+.tutorial h3 {
     color: white;
     font-size: 2.2rem;
     font-weight: 800;
 }
-.tutorial  p{
-    color:rgba(255, 255, 255, 0.65);
+
+.tutorial p {
+    color: rgba(255, 255, 255, 0.65);
     margin-top: 0.6rem;
 
 }
-.ball{
+
+.ball {
     height: 40px;
     width: 40px;
     border-radius: 50%;
     background-color: rgb(230, 83, 60);
-    
+
 }
-.play-icon{
+
+.play-icon {
     height: 15px;
     width: 15px;
     background: rgb(250, 250, 249);
     clip-path: polygon(0 1%, 0% 100%, 100% 50%);
     position: absolute;
-    top:40%;
-    left:15%;
+    top: 40%;
+    left: 15%;
 }
-.tutorial{
+
+.tutorial {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -210,10 +224,11 @@ header {
 
 
 @media screen and (max-width:576px) {
-    .navbar,
-.banner {
-    max-width: 500px;
 
-}
-    
+    .navbar,
+    .banner {
+        max-width: 500px;
+
+    }
+
 }
