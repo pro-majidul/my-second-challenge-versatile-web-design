@@ -252,7 +252,7 @@ header {
 /* habit section area start */
 .habits {
     margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
 }
 
 .habit-content {
@@ -287,6 +287,31 @@ header {
     font-weight: 600;
 }
 
+/* run and extra mile section added */
+.extra-mile{
+    margin-bottom: 5rem;
+    padding: 25px 40px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(20px);
+}
+.extra-mile-content{
+    width: 40%;
+}
+
+.extra-mile-images{
+    width: 50%;
+}
+.extra-mile-images > img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+
 
 
 
@@ -304,7 +329,7 @@ header {
     .banner {
         flex-direction: column;
     }
-
+    
     .banner-content {
         width: 100%;
     }
@@ -339,7 +364,8 @@ header {
         top: 1024px;
         background-color: black;
     }
-
+    .extra-mile-content,
+    .extra-mile-images,
     .habit-brand {
       width: 90%;
     }
@@ -350,6 +376,16 @@ header {
     .habit-content {
         flex-direction: column;
         gap:0.5rem;
+    }
+    .extra-mile{
+        width: 75%;
+        position: absolute;
+        top: 2860px;
+        flex-direction: column;
+    }
+    .extra-mile-content > button{
+        width: 100%;
+        margin-bottom: 60px;
     }
 
 
