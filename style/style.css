@@ -88,6 +88,7 @@ header {
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 120%;
+    font-style: italic;
 }
 
 .nav-list-items {
@@ -309,13 +310,14 @@ header {
 }
 
 .extra-mile-images {
-    width: 50%;
+    width: 40%;
     margin-right: 40px;
 }
 
 .extra-mile-images>img {
     width: 100%;
     border-radius: 8px;
+    object-fit:cover;
 }
 
 /* BMI Calculator section area style */
@@ -463,6 +465,7 @@ input::placeholder {
     overflow: hidden;
     width: 100%;
     opacity: 80%;
+    object-fit: cover;
 }
 
 .team-title,
@@ -510,6 +513,8 @@ footer {
     font-size: 3rem;
     color: rgb(230, 83, 60);
     margin-bottom: 2rem;
+    font-style: italic;
+
 }
 
 .foot-title {
@@ -535,7 +540,7 @@ footer {
 hr {
     width: 1080px;
     margin: 0 auto;
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-foot {
@@ -573,7 +578,6 @@ hr {
 
     .banner-images {
         margin-top: 3rem;
-        z-index: -1;
     }
 
     .banner-i .hamber {
@@ -590,20 +594,6 @@ hr {
 
     .video {
         top: 40px;
-    }
-
-    .tutorial {
-        margin-top: -315px;
-        margin-left: -65px;
-    }
-
-    .habits {
-        /* position: absolute;
-        top: 1024px;
-         */
-        background-color: black;
-        margin-top: -140px;
-        z-index: 99999;
     }
 
     .extra-mile-content,
@@ -626,8 +616,6 @@ hr {
 
     .extra-mile {
         width: 85%;
-        /* position: absolute;
-        top: 2860px; */
         flex-direction: column;
     }
 
@@ -678,7 +666,7 @@ hr {
 
     .footer-container {
         grid-template-columns: 1fr;
-        width: 70%;
+        width: 85%;
         gap: 10px;
     }
     .footer-title{
@@ -694,7 +682,7 @@ hr {
 
     hr {
         margin-top: 3rem;
-        width: 70%;
+        width: 85%;
     }
 
 }
