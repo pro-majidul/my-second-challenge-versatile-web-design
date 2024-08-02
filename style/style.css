@@ -19,19 +19,19 @@ body {
 }
 
 /* shared style */
-main,
+.habits,
+.extra-mile,
+.bmi-container-content,
 .navbar,
 .banner {
     max-width: 1080px;
     margin: 0 auto;
-
 }
 
 .common-text {
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
     font-size: 1rem;
-    font-weight: 400;
     line-height: 1.8rem;
     letter-spacing: 0.5px;
 }
@@ -70,6 +70,8 @@ main,
 header {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
     padding-top: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .navbar {
@@ -103,7 +105,6 @@ header {
 .list-link {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-weight: 300;
 }
 
 .extra-feature {
@@ -276,8 +277,9 @@ header {
 }
 
 .habit-img {
-    border-radius: 50%;
     width: 80%;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
 }
 
 .habit-title {
@@ -290,7 +292,7 @@ header {
 /* run and extra mile section added */
 .extra-mile {
     margin-bottom: 5rem;
-    padding: 25px 40px;
+    padding: 25px 0;
     border-radius: 18px;
     background: rgb(34, 34, 34);
     display: flex;
@@ -301,10 +303,12 @@ header {
 
 .extra-mile-content {
     width: 40%;
+    margin-left: 40px;
 }
 
 .extra-mile-images {
     width: 50%;
+    margin-right: 40px;
 }
 
 .extra-mile-images>img {
@@ -312,6 +316,116 @@ header {
     border-radius: 8px;
 }
 
+/* BMI Calculator section area style */
+
+
+.bmi-calculator-content {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.bmi-container {
+    background: rgb(34, 34, 34);
+    margin: 5rem auto;
+    max-width: 1400px;
+}
+
+.bmi-container-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 0;
+
+}
+
+.calculator-chat {
+    width: 40%;
+    margin-left: 40px;
+}
+
+
+
+.calculate-title-1 {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.calculate-title-2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+table,
+td,
+th {
+    padding: 15px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+}
+
+thead>tr>th {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: left;
+}
+
+tbody>tr>td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 120%;
+}
+.calculate-bmi {
+    width: 50%;
+    margin-right: 40px;
+}
+
+.calculate-input {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 20px;
+}
+
+.calculate-input>input, #sex {
+    border-radius: 8px;
+    padding: 0 12px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    height: 50px;
+    color: white;
+    font-size: 16px;
+}
+#sex{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+}
+#fector{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+}
+.btn{
+    width: 40%;
+}
+
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
 
 
 
@@ -321,8 +435,10 @@ header {
 
 @media screen and (max-width:576px) {
 
+    .habits,
+    .extra-mile,
+    .bmi-container-content,
     .navbar,
-    main,
     .banner {
         max-width: 500px;
 
@@ -372,13 +488,16 @@ header {
     }
 
     .extra-mile-content,
-    .extra-mile-images,
-    .habit-brand {
+    .extra-mile-images {
         width: 90%;
     }
 
+    .habit-brand {
+        width: 100%;
+    }
+
     .section-title {
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
     }
 
     .habit-content {
@@ -397,6 +516,41 @@ header {
         width: 100%;
         margin-bottom: 60px;
     }
+
+    .extra-mile-content,
+    .calculator-chat {
+        margin-left: 0;
+    }
+
+    .extra-mile-images,
+    .calculate-bmi {
+        margin-right: 0;
+
+    }
+
+    .bmi-calculator-content {
+        width: 500px;
+    }
+
+    .calculate-bmi,
+    .calculator-chat {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 34px;
+    }
+
+
+    .bmi-container-content {
+        flex-direction: column;
+
+    }
+    .calculate-bmi{
+        border: 2px solid red;
+    }
+    .btn{
+        width: 60%;
+    }
+
 
 
 }
