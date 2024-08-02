@@ -24,7 +24,8 @@ body {
 .bmi-container-content,
 .navbar,
 .banner,
-.team-gallery {
+.team-gallery,
+.footer-container {
     max-width: 1080px;
     margin: 0 auto;
 }
@@ -89,7 +90,7 @@ header {
     line-height: 120%;
 }
 
-.list-items {
+.nav-list-items {
     display: flex;
     align-items: center;
     border: 1px solid rgb(255, 225, 255, 0.1);
@@ -97,13 +98,13 @@ header {
     padding: 8px 0;
 }
 
-.list-item {
+.nav-list-item {
     list-style: none;
     margin-right: 2rem;
 
 }
 
-.list-link {
+.nav-list-link {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
@@ -440,7 +441,8 @@ input::placeholder {
     margin: 0 auto;
     text-align: center;
 }
-.team-gallery-content{
+
+.team-gallery-content {
     position: relative;
 
 }
@@ -451,33 +453,102 @@ input::placeholder {
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-bottom: 20px;
-    
+
 }
-.team-image{
-    border-radius: 6px;
+
+.team-image {
+    border-radius: 16px;
     height: 280px;
     overflow: hidden;
     width: 100%;
     opacity: 80%;
 }
-.team-title , .team-text{
+
+.team-title,
+.team-text {
     position: absolute;
     bottom: 30px;
     margin-left: 20px;
 
 }
-.team-title{
+
+.team-title {
     font-size: 1.3rem;
     margin-bottom: 20px;
 }
-.team-text{
+
+.team-text {
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.5);
 }
 
+
+/* footer area style */
+footer {
+    background: rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    padding-bottom: 30px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10%;
+    width: 100%;
+}
+
+.footer-content {
+    margin-bottom: 3rem;
+
+}
+
+.footer-title {
+    font-size: 3rem;
+    color: rgb(230, 83, 60);
+    margin-bottom: 2rem;
+}
+
+.foot-title {
+    font-size: 1.4rem;
+}
+
+.foot-list {
+    margin-top: 3rem;
+}
+
+.list-item {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.list-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+hr {
+    width: 1080px;
+    margin: 0 auto;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-foot {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 300;
+}
 
 
 
@@ -487,9 +558,10 @@ input::placeholder {
     .extra-mile,
     .bmi-container-content,
     .navbar,
-    .banner ,
-    .team-gallery
-    {
+    .banner,
+    .team-gallery .habits,
+    .footer-container ,
+    hr{
         max-width: 500px;
 
     }
@@ -511,7 +583,7 @@ input::placeholder {
         display: block;
     }
 
-    .list-items {
+    .nav-list-items {
         display: none;
     }
 
@@ -578,7 +650,8 @@ input::placeholder {
 
     }
 
-    .bmi-calculator-content, .meat-content {
+    .bmi-calculator-content,
+    .meat-content {
         width: 500px;
     }
 
@@ -598,9 +671,31 @@ input::placeholder {
     .btn {
         width: 60%;
     }
-    .team-gallery{
+
+    .team-gallery {
         width: 70%;
         grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        width: 70%;
+        gap: 10px;
+    }
+    .footer-title{
+        margin-bottom: 1rem;
+    }
+    .foot-list{
+        margin-top: 1rem;
+    }
+
+    .footer-content {
+        margin-bottom: 0rem;
+    }
+
+    hr {
+        margin-top: 3rem;
+        width: 70%;
     }
 
 }
