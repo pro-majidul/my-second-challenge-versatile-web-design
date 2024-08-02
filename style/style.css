@@ -342,7 +342,6 @@ header {
 
 .calculator-chat {
     width: 40%;
-    margin-left: 40px;
 }
 
 
@@ -382,7 +381,6 @@ tbody>tr>td {
 
 .calculate-bmi {
     width: 50%;
-    margin-right: 40px;
 }
 
 .calculate-input {
@@ -556,7 +554,6 @@ hr {
 
     .habits,
     .extra-mile,
-    .bmi-container-content,
     .navbar,
     .banner,
     .team-gallery .habits,
@@ -652,8 +649,9 @@ hr {
 
     .bmi-calculator-content,
     .meat-content {
-        width: 500px;
+        width: 85%;
     }
+
 
     .calculate-bmi,
     .calculator-chat {
@@ -665,6 +663,7 @@ hr {
 
     .bmi-container-content {
         flex-direction: column;
+        width: 90%;
 
     }
 
